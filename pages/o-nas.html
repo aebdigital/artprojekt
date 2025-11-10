@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>O nás - Art Projekt s.r.o. | Stavebníctvo a projektovanie</title>
+    <meta name="description" content="Spoznajte Art Projekt s.r.o. - odborníci na projektovanie a stavebníctvo s tímom skúsených inžinierov a architektov.">
+    <meta name="keywords" content="o nás, Art Projekt, stavebníctvo, projektovanie, architektonické štúdie, stavebné povolenie">
+   
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="../css/base.css?v=3.0">
+    <!-- Component CSS -->
+    <link rel="stylesheet" href="../css/components/header.css?v=3.0">
+    <link rel="stylesheet" href="../css/components/footer.css?v=3.0">
+    <link rel="stylesheet" href="../css/components/hero.css?v=3.0">
+    <!-- Page-specific CSS -->
+    <link rel="stylesheet" href="../css/o-nas.css?v=3.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP and Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Container -->
+    <div id="navigation-container"></div>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-bg">
+            <img class="random-hero-image" alt="Art Projekt o nás">
+        </div>
+        <div class="contact-hero-content">
+            <div class="container">
+                <h1 class="contact-hero-title">O nás</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-main-section">
+        <div class="container">
+            <div class="about-content-wrapper">
+                <div class="about-text-content">
+                    <span class="about-accent-line"></span>
+                    <h2 class="about-main-title">Art Projekt s.r.o.</h2>
+                    <p class="about-description">V roku 2003, ešte počas štúdií, sme založili ateliér, ktorý sa zaoberal výhradne architektonickou činnosťou a projektovaním stavieb.</p>
+                    <p class="about-description">Po rokoch spolupráce sme v roku 2008 status spoločnosti zmenili na ART Projekt s.r.o. a svoje pôsobenie sme rozšírili o realizačnú činnosť.</p>
+                    <p class="about-description">S naším realizačným tímom dnes uskutočníme Vaše sny od prvého návrhu, cez vybavenie všetkých potrebných povolení až po realizáciu na kľúč, vrátane interiéru.</p>
+                    <p class="about-description"><strong>Môžete sa len nasťahovať…</strong></p>
+                </div>
+                
+                <div class="about-image-content">
+                    <div class="about-image-wrapper">
+                        <img class="random-image" alt="Art Projekt stavby">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="team-title">Náš tím</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Ing. arch. Zuzana Horváthová</h3>
+                    <p>FA STU v Bratislave</p>
+                </div>
+                <div class="team-member">
+                    <h3>Ing. Tomáš Kalivoda</h3>
+                    <p>MTF STU v Trnave</p>
+                </div>
+                <div class="team-member">
+                    <h3>Ing. Peter Horváth</h3>
+                    <p>SvF STU v Bratislave</p>
+                    <p>Autorizovaný stavebný inžinier</p>
+                    <p>Stavebný dozor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Fallback Components (always loads) -->
+    <script src="../js/fallback-components.js?v=3.0"></script>
+    <script src="../js/gsap-simple.js?v=3.0"></script>
+
+    <!-- Random Image Loader Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Array of images from referencie folder
+            const referencieImages = [
+                '../sources/referencie/1-Bohunka-750x450.jpg',
+                '../sources/referencie/10-750x450.jpg',
+                '../sources/referencie/JB-parkovisko-2-750x450.jpg',
+                '../sources/referencie/RD-Cervenik-1-750x450.jpg',
+                '../sources/referencie/RD-Sokolovce-1-750x450.jpg',
+                '../sources/referencie/RD-TT-bazen-2-750x450.jpg',
+                '../sources/referencie/oravne-1-750x450.jpg'
+            ];
+            
+            // Function to get random image
+            function getRandomImage() {
+                return referencieImages[Math.floor(Math.random() * referencieImages.length)];
+            }
+            
+            // Assign random images to hero background
+            const heroImageElements = document.querySelectorAll('.random-hero-image');
+            heroImageElements.forEach(function(img) {
+                img.src = getRandomImage();
+            });
+            
+            // Assign random images to other random image elements
+            const randomImageElements = document.querySelectorAll('.random-image');
+            randomImageElements.forEach(function(img) {
+                img.src = getRandomImage();
+            });
+        });
+    </script>
+
+    <!-- Main JavaScript (ES6 modules) -->
+    <script type="module" src="../js/main.js?v=3.0"></script>
+</body>
+</html>
