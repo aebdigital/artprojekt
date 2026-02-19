@@ -21,6 +21,16 @@ export default function StavebnyDozorPage() {
       <p className="text-base leading-[1.6] text-[#555] mb-5">
         Stavebný dozor neriadi stavbu (to je náplň stavbyvedúceho), je zodpovedný za dohľad a kontrolu nad stavebnými prácami. Na stavbe zastupuje záujmy investora. Zabezpečuje dodržiavanie stavebných predpisov, bezpečnostných noriem a súlad stavby s projektovou dokumentáciou.
       </p>
+      <p className="text-base leading-[1.6] text-[#555] mb-5">
+        <a
+          href="https://verejnyportal.sksi.sk/search/profile/4391"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#222] font-semibold underline transition-colors duration-300 hover:text-[#555]"
+        >
+          verejnyportal.sksi.sk/search/profile/4391
+        </a>
+      </p>
 
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         Referencie stavebného dozoru:
