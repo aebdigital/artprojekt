@@ -17,7 +17,7 @@ export default function ReferenciePage() {
             src="/images/hero-bg.jpg"
             alt="Referencie ART PROJEKT"
             fill
-            className="object-cover object-[center_20%]"
+            className="object-cover object-[center_55%]"
             priority
           />
           <div className="absolute inset-0 bg-black/50" />

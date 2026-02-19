@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
             src="/images/hero-bg.jpg"
             alt="Ochrana osobných údajov"
             fill
-            className="object-cover object-[center_20%]"
+            className="object-cover object-[center_55%]"
             priority
           />
           <div className="absolute inset-0 bg-black/50" />
