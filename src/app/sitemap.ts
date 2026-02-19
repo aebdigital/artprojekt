@@ -1,10 +1,9 @@
 import { MetadataRoute } from "next";
-import { getAllProjectSlugs } from "@/lib/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://artprojekt.sk";
 
-  const staticPages: MetadataRoute.Sitemap = [
+  return [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -50,7 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/referencie`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
+      changeFrequency: "monthly",
       priority: 0.8,
     },
     {
@@ -66,14 +65,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
   ];
-
-  const projectSlugs = getAllProjectSlugs();
-  const projectPages: MetadataRoute.Sitemap = projectSlugs.map((slug) => ({
-    url: `${baseUrl}/referencie/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
-
-  return [...staticPages, ...projectPages];
 }
