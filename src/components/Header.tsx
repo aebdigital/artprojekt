@@ -95,14 +95,14 @@ export default function Header() {
           </ul>
 
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0 order-2 flex-1 md:flex-none justify-center">
+          <div className="flex items-center flex-shrink-0 order-2 flex-1 md:flex-none justify-start md:justify-center">
             <Link href="/" className="transition-opacity duration-300 hover:opacity-80">
               <Image
                 src="/images/logo2.png"
                 alt="ART PROJEKT s.r.o."
                 width={isScrolled ? 140 : 188}
                 height={isScrolled ? 56 : 75}
-                className="object-contain transition-all duration-300"
+                className="object-contain transition-all duration-300 max-w-[120px] md:max-w-none"
                 priority
               />
             </Link>
