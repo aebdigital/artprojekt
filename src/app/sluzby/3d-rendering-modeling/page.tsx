@@ -14,7 +14,6 @@ export default function RenderingPage() {
       mainTitle="Vizualizácie a 3D modely"
       description="Spracovávame vizualizácie exteriérov či interiérov stavieb nielen na naše vlastné návrhy, ale aj ako samostatnú službu pre projektantov, či stavebníkov."
       heroImageIndex={5}
-      sideImageIndex={1}
     >
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         3D vizualizácie

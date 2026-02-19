@@ -14,7 +14,6 @@ export default function ArchitektonickeProjektePage() {
       mainTitle="Komplexné architektonické riešenia"
       description="Na základe Vašich požiadaviek Vám vypracujeme urbanistickú a architektonickú štúdiu, projektovú dokumentáciu a 3D vizualizácie."
       heroImageIndex={0}
-      sideImageIndex={3}
     >
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         Urbanistická štúdia

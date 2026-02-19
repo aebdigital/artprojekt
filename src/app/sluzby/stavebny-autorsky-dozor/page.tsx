@@ -14,7 +14,6 @@ export default function StavebnyDozorPage() {
       mainTitle="Odborný dozor výstavby"
       description="Stavebný a autorský dozor pomôže predchádzať chybám počas realizácie, včas nájde riešenie, ak z objektívnych dôvodov muselo prísť k zmenám oproti projektovej dokumentácii, čím investorovi v konečnom dôsledku ochráni investície."
       heroImageIndex={4}
-      sideImageIndex={0}
     >
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         Stavebný dozor

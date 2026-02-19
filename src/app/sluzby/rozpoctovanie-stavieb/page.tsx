@@ -14,7 +14,6 @@ export default function RozpoctovaniePage() {
       mainTitle="Presné kalkulácie nákladov"
       description="Rozpočet stavby je súpis položiek stavebných konštrukcií, technológií a materiálov. Slúži pre stanovenie odhadov celkových nákladov na realizáciu stavby."
       heroImageIndex={3}
-      sideImageIndex={6}
     >
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         Prečo je rozpočet dôležitý?

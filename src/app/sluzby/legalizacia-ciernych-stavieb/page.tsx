@@ -14,7 +14,6 @@ export default function LegalizaciaPage() {
       mainTitle="Preskúmanie spôsobilosti stavby na užívanie"
       description="Pomôžeme Vám zosúladiť existujúce stavby podľa nového stavebného zákona."
       heroImageIndex={2}
-      sideImageIndex={5}
     >
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         Nový právny inštitút

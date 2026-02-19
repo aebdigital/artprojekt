@@ -14,7 +14,6 @@ export default function InzinieringPage() {
       mainTitle="Komplexné inžinierske služby"
       description="Zabezpečíme predprojektovú prípravu, vybavenie stavebného zámeru, koordináciu projektových prác a následné kolaudačné rozhodnutie."
       heroImageIndex={1}
-      sideImageIndex={4}
     >
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">
         Čo zahŕňa inžiniering?
