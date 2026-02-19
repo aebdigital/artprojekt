@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   keywords: "kontakt, ART PROJEKT, architektonické práce, projekčné práce, Dolné Dubové",
 };
 
-const team = [
+const team: { name: string; phone: string; phoneLink: string; email: string; portfolio?: string }[] = [
   {
     name: "Ing. Peter Horváth",
     phone: "0905 516 135",
@@ -25,6 +25,7 @@ const team = [
     phone: "0907 857 496",
     phoneLink: "+421907857496",
     email: "horvathjuraj.art@gmail.com",
+    portfolio: "jurajhorvath.wixsite.com/portfolio",
   },
 ];
 
@@ -96,6 +97,18 @@ export default function KontaktPage() {
                           {person.email}
                         </a>
                       </p>
+                      {person.portfolio && (
+                        <p className="text-base text-[#555]">
+                          <a
+                            href={`https://${person.portfolio}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-[#222] transition-colors duration-300"
+                          >
+                            {person.portfolio}
+                          </a>
+                        </p>
+                      )}
                     </div>
                     <p className="text-base text-[#555]">
                       <a

@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Referencie - ART PROJEKT s.r.o.",
@@ -31,38 +29,12 @@ export default function ReferenciePage() {
         </div>
       </section>
 
-      {/* Projects Grid */}
+      {/* Content */}
       <section className="py-16 bg-white">
-        <div className="max-w-[1400px] mx-auto px-5">
-
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <Link
-                key={project.slug}
-                href={`/referencie/${project.slug}`}
-                className="group block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="relative h-[300px] overflow-hidden">
-                  <Image
-                    src={project.thumbnail}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-white/80 text-sm">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+        <div className="max-w-[1400px] mx-auto px-5 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#222]">
+            Na stránke sa pracuje
+          </h2>
         </div>
       </section>
     </>

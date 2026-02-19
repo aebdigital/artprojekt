@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
+
 const services = [
   { href: "/sluzby/architektonicke-projekcne-prace", label: "Architektonické a projekčné práce" },
   { href: "/sluzby/inziniering", label: "Inžiniering" },
@@ -29,7 +30,6 @@ interface ServicePageLayoutProps {
   description: string;
   children: React.ReactNode;
   heroImageIndex?: number;
-  sideImageIndex?: number;
 }
 
 export default function ServicePageLayout({
@@ -38,11 +38,9 @@ export default function ServicePageLayout({
   description,
   children,
   heroImageIndex = 0,
-  sideImageIndex = 1,
 }: ServicePageLayoutProps) {
   const pathname = usePathname();
   const heroImage = heroImages[heroImageIndex % heroImages.length];
-  const sideImage = heroImages[sideImageIndex % heroImages.length];
 
   return (
     <>
@@ -89,7 +87,7 @@ export default function ServicePageLayout({
             </aside>
 
             {/* Main Content */}
-            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-[40px] lg:gap-[60px] items-start">
+            <div>
               {/* Text Content */}
               <div className="flex flex-col">
                 <span className="w-[60px] h-[3px] bg-[#333] block mb-5" />
@@ -112,17 +110,6 @@ export default function ServicePageLayout({
                     .
                   </p>
                 </div>
-              </div>
-
-              {/* Side Image */}
-              <div className="flex justify-center items-start">
-                <Image
-                  src={sideImage}
-                  alt={`${title} - ukážka`}
-                  width={400}
-                  height={300}
-                  className="w-full max-w-[400px] h-[300px] md:h-[250px] max-[480px]:h-[200px] object-cover rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
-                />
               </div>
             </div>
           </div>

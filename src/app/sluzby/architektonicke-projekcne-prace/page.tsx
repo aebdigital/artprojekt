@@ -20,7 +20,7 @@ export default function ArchitektonickeProjektePage() {
         Urbanistická štúdia
       </h3>
       <p className="text-base leading-[1.6] text-[#555] mb-5">
-        Rieši čiastkové problémy v území – krajinnoekologické (parky...), mestotvorné (verejný priestor, ulice, námestia...), územnoplánovacie – nové obytné či priemyselné štvrte...) Spravidla slúži na podrobnejšie spracovanie, alebo overenie územného plánu. Je podkladom pre územné rozhodovanie a môže slúžiť ako podklad k Stavebnému zámeru.
+        Rieši čiastkové problémy v území – krajinnoekologické (parky...), mestotvorné (verejný priestor, ulice, námestia...), územnoplánovacie (nové obytné či priemyselné štvrte...) Spravidla slúži na podrobnejšie spracovanie, alebo overenie územného plánu. Je podkladom pre územné rozhodovanie a môže slúžiť ako podklad k Stavebnému zámeru.
       </p>
 
       <h3 className="text-[1.4rem] md:text-[1.2rem] max-[480px]:text-[1.1rem] font-semibold text-[#222] mb-[15px] leading-[1.3]">

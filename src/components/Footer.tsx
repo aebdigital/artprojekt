@@ -13,9 +13,9 @@ const services = [
 ];
 
 const team = [
-  { name: "Ing. Peter Horváth", phone: "0905 516 135", phoneLink: "+421905516135" },
-  { name: "Ing. arch. Zuzana Horváthová", phone: "0908 544 987", phoneLink: "+421908544987" },
-  { name: "Juraj Horváth", phone: "0907 857 496", phoneLink: "+421907857496" },
+  { name: "Ing. Peter Horváth", phone: "0905 516 135", phoneLink: "+421905516135", email: "horvath@artprojekt.sk" },
+  { name: "Ing. arch. Zuzana Horváthová", phone: "0908 544 987", phoneLink: "+421908544987", email: "horvathova@artprojekt.sk" },
+  { name: "Juraj Horváth", phone: "0907 857 496", phoneLink: "+421907857496", email: "horvathjuraj.art@gmail.com", portfolio: "jurajhorvath.wixsite.com/portfolio" },
 ];
 
 export default function Footer() {
@@ -89,7 +89,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3">
             <h4 className="text-white font-semibold text-base mb-2">Kontakt</h4>
             {team.map((person) => (
-              <p key={person.name} className="text-white/80 text-sm leading-relaxed">
+              <div key={person.name} className="text-white/80 text-sm leading-relaxed">
                 {person.name}<br />
                 <a
                   href={`tel:${person.phoneLink}`}
@@ -97,7 +97,27 @@ export default function Footer() {
                 >
                   {person.phone}
                 </a>
-              </p>
+                <br />
+                <a
+                  href={`mailto:${person.email}`}
+                  className="transition-colors duration-300 hover:text-white"
+                >
+                  {person.email}
+                </a>
+                {person.portfolio && (
+                  <>
+                    <br />
+                    <a
+                      href={`https://${person.portfolio}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors duration-300 hover:text-white"
+                    >
+                      {person.portfolio}
+                    </a>
+                  </>
+                )}
+              </div>
             ))}
           </div>
         </div>
