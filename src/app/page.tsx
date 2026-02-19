@@ -45,7 +45,7 @@ export default function Home() {
             src="/images/hero-bg.jpg"
             alt="ART PROJEKT"
             fill
-            className="object-cover"
+            className="object-cover object-[center_20%]"
             priority
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -57,7 +57,7 @@ export default function Home() {
             <Link
               key={service.href}
               href={service.href}
-              className="relative overflow-hidden flex items-end no-underline text-white border border-white/10 group min-h-[250px] md:min-h-0 transition-all duration-300 hover:bg-black/30"
+              className="relative overflow-hidden flex items-end no-underline text-white border-2 border-white/20 group min-h-[250px] md:min-h-0 transition-all duration-300 hover:bg-black/30"
             >
               {/* Hover Arrow */}
               <div className="absolute top-5 right-5 z-[3] opacity-0 translate-x-2 -translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0">
