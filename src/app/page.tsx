@@ -110,6 +110,17 @@ export default function Home() {
               </div>
               <div className="text-[0.9rem] opacity-80 mt-[5px]">rokov skúseností</div>
             </div>
+            <a
+              href="https://www.google.com/search?sca_esv=5dca0e6f8aa8611e&rlz=1C5CHFA_enSK1121SK1121&sxsrf=ANbL-n745XytE4mrXhdSDBl264r54Z_VQQ:1771526540165&q=art+projekt+sro&si=AL3DRZHrmvnFAVQPOO2Bzhf8AX9KZZ6raUI_dT7DG_z0kV2_x1GZMRb6a8CXbATD6EWA_SCFBtcRxOFv7lz3C1sOZT1-p2QlsRweqzSnreEH6wRtaoINtpA%3D&uds=ALYpb_n_EM_B_ErB9c5NX69H4GoW4rg9CXIMzSnYo5axeYq1DUJlpXN4E1YOJxpvs0mNN5U63_dPrFJva-NjECzdjpYYwe-JmMfqV0bOihID8FWSDhAsic0&sa=X&ved=2ahUKEwim0ovRmuaSAxXK9bsIHXhjADIQ3PALegQIGxAE&biw=1710&bih=985&dpr=2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center md:text-right text-white no-underline transition-transform duration-300 hover:scale-[1.03]"
+            >
+              <div className="text-[2.5rem] max-[480px]:text-[2rem] font-bold leading-none flex items-baseline justify-center md:justify-end">
+                4,8<span className="text-[1.5rem] ml-[2px]">/5</span>
+              </div>
+              <div className="text-[0.9rem] opacity-80 mt-[5px]">recenzie</div>
+            </a>
           </div>
         </div>
       </section>
