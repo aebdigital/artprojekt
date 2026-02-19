@@ -48,10 +48,10 @@ export default function ServicePageLayout({
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src={heroImage}
+            src="/images/hero-bg.jpg"
             alt={title}
             fill
-            className="object-cover"
+            className="object-cover object-[center_20%]"
             priority
           />
           <div className="absolute inset-0 bg-black/50" />

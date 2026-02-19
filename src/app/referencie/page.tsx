@@ -14,10 +14,10 @@ export default function ReferenciePage() {
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/referencie/1-Bohunka-750x450.jpg"
+            src="/images/hero-bg.jpg"
             alt="Referencie ART PROJEKT"
             fill
-            className="object-cover"
+            className="object-cover object-[center_20%]"
             priority
           />
           <div className="absolute inset-0 bg-black/50" />

@@ -13,10 +13,10 @@ export default function PrivacyPolicyPage() {
       <section className="relative h-[30vh] min-h-[200px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/referencie/10-750x450.jpg"
+            src="/images/hero-bg.jpg"
             alt="Ochrana osobných údajov"
             fill
-            className="object-cover"
+            className="object-cover object-[center_20%]"
             priority
           />
           <div className="absolute inset-0 bg-black/50" />
