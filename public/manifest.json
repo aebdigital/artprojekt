@@ -1,0 +1,17 @@
+{
+  "name": "ART PROJEKT s.r.o.",
+  "short_name": "ART PROJEKT",
+  "description": "Architektonické a projekčné práce, inžiniering, stavebný dozor. Dolné Dubové, Slovensko.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#222222",
+  "lang": "sk",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

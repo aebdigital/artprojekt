@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Rozpočtovanie stavieb - ART PROJEKT s.r.o.",
-  description: "Profesionálne rozpočtovanie stavieb - položkové rozpočty, výkaz výmer, odhad nákladov. Spracovanie v programe Kalkulus.",
-  keywords: "rozpočtovanie, rozpočet stavby, výkaz výmer, položkový rozpočet, odhad nákladov",
+  title: "Rozpočtovanie stavieb",
+  description: "Rozpočtovanie stavieb – položkové rozpočty, výkaz výmer, odhad nákladov. Spracovanie v programe Kalkulus. ART PROJEKT s.r.o., Dolné Dubové, okres Trnava.",
+  keywords: ["rozpočtovanie stavieb", "rozpočet stavby", "položkový rozpočet", "výkaz výmer", "odhad nákladov", "Kalkulus", "rozpočet stavby Trnava"],
+  alternates: { canonical: "https://artprojekt.sk/sluzby/rozpoctovanie-stavieb" },
+  openGraph: {
+    title: "Rozpočtovanie stavieb | ART PROJEKT s.r.o.",
+    description: "Položkové rozpočty, výkaz výmer a odhad nákladov. Presné kalkulácie pre vašu stavbu.",
+    url: "https://artprojekt.sk/sluzby/rozpoctovanie-stavieb",
+  },
 };
 
 export default function RozpoctovaniePage() {

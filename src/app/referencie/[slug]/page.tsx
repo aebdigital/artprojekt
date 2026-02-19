@@ -19,13 +19,20 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!project) {
     return {
-      title: "Projekt nenájdený - ART PROJEKT s.r.o.",
+      title: "Projekt nenájdený",
     };
   }
 
   return {
-    title: `${project.title} - ART PROJEKT s.r.o.`,
-    description: project.description,
+    title: project.title,
+    description: `${project.description} ${project.location}, ${project.year}. ART PROJEKT s.r.o.`,
+    alternates: { canonical: `https://artprojekt.sk/referencie/${slug}` },
+    openGraph: {
+      title: `${project.title} | ART PROJEKT s.r.o.`,
+      description: project.description,
+      url: `https://artprojekt.sk/referencie/${slug}`,
+      images: project.thumbnail ? [{ url: project.thumbnail, alt: project.title }] : undefined,
+    },
   };
 }
 

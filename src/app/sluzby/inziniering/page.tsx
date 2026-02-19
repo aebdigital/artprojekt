@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Inžiniering - ART PROJEKT s.r.o.",
-  description: "Profesionálne inžinierske služby - predprojektová príprava, konzultácie so stavebným úradom, koordinácia projektových prác.",
-  keywords: "inžiniering, stavebné povolenie, konzultácie, kolaudácia, stavebný zámer",
+  title: "Inžiniering",
+  description: "Inžinierske služby – predprojektová príprava, stavebný zámer, koordinácia projektových prác, kolaudačné rozhodnutie. ART PROJEKT s.r.o., Dolné Dubové, okres Trnava.",
+  keywords: ["inžiniering", "stavebné povolenie", "stavebný zámer", "kolaudácia", "kolaudačné rozhodnutie", "predprojektová príprava", "inžiniering Trnava"],
+  alternates: { canonical: "https://artprojekt.sk/sluzby/inziniering" },
+  openGraph: {
+    title: "Inžiniering | ART PROJEKT s.r.o.",
+    description: "Komplexné inžinierske služby – od predprojektovej prípravy cez stavebný zámer až po kolaudačné rozhodnutie.",
+    url: "https://artprojekt.sk/sluzby/inziniering",
+  },
 };
 
 export default function InzinieringPage() {

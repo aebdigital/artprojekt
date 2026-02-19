@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "3D rendering, 3D modeling - ART PROJEKT s.r.o.",
-  description: "Profesionálne 3D vizualizácie exteriérov a interiérov, 3D modely pre tlač a prezentáciu produktov.",
-  keywords: "3D rendering, 3D modeling, vizualizácie, 3D tlač, architektonické vizualizácie",
+  title: "3D rendering, 3D modeling",
+  description: "3D vizualizácie exteriérov a interiérov, 3D modely pre tlač a prezentáciu produktov. Fotorealistické renderingy. ART PROJEKT s.r.o., Dolné Dubové, okres Trnava.",
+  keywords: ["3D rendering", "3D modeling", "3D vizualizácie", "vizualizácie interiérov", "vizualizácie exteriérov", "3D tlač", "architektonické vizualizácie", "3D vizualizácie Trnava"],
+  alternates: { canonical: "https://artprojekt.sk/sluzby/3d-rendering-modeling" },
+  openGraph: {
+    title: "3D rendering, 3D modeling | ART PROJEKT s.r.o.",
+    description: "Fotorealistické 3D vizualizácie exteriérov a interiérov, 3D modely pre tlač a prezentáciu.",
+    url: "https://artprojekt.sk/sluzby/3d-rendering-modeling",
+  },
 };
 
 export default function RenderingPage() {

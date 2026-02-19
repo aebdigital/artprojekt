@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Kontakt - ART PROJEKT s.r.o.",
-  description: "Kontaktujte ART PROJEKT s.r.o. - odborníci na architektonické a projekčné práce. Dolné Dubové, Slovensko.",
-  keywords: "kontakt, ART PROJEKT, architektonické práce, projekčné práce, Dolné Dubové",
+  title: "Kontakt",
+  description: "Kontaktujte ART PROJEKT s.r.o. – architektonické a projekčné práce. Dolné Dubové 244, 919 52, okres Trnava. Telefón, email, mapa.",
+  keywords: ["kontakt ART PROJEKT", "architekt Dolné Dubové", "projektant Trnava", "architektonická kancelária Trnava"],
+  alternates: { canonical: "https://artprojekt.sk/kontakt" },
+  openGraph: {
+    title: "Kontakt | ART PROJEKT s.r.o.",
+    description: "Kontaktujte nás – Dolné Dubové 244, 919 52. Architektonické a projekčné práce, inžiniering, stavebný dozor.",
+    url: "https://artprojekt.sk/kontakt",
+  },
 };
 
 const team: { name: string; phone: string; phoneLink: string; email: string; portfolio?: string }[] = [

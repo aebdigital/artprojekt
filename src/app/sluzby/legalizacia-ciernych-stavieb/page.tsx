@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Legalizácia čiernych stavieb - ART PROJEKT s.r.o.",
-  description: "Profesionálna legalizácia čiernych stavieb podľa nového stavebného zákona. Preskúmanie spôsobilosti stavby na užívanie.",
-  keywords: "legalizácia, čierne stavby, dodatočné stavebné povolenie, preskúmanie spôsobilosti",
+  title: "Legalizácia čiernych stavieb",
+  description: "Legalizácia čiernych stavieb podľa nového stavebného zákona – preskúmanie spôsobilosti stavby na užívanie, termín do 31.03.2029. ART PROJEKT s.r.o., Dolné Dubové, okres Trnava.",
+  keywords: ["legalizácia čiernych stavieb", "čierne stavby", "preskúmanie spôsobilosti stavby", "dodatočné stavebné povolenie", "nový stavebný zákon", "legalizácia stavby Trnava"],
+  alternates: { canonical: "https://artprojekt.sk/sluzby/legalizacia-ciernych-stavieb" },
+  openGraph: {
+    title: "Legalizácia čiernych stavieb | ART PROJEKT s.r.o.",
+    description: "Pomôžeme vám zlegalizovať stavbu podľa nového stavebného zákona. Preskúmanie spôsobilosti stavby na užívanie – termín do 31.03.2029.",
+    url: "https://artprojekt.sk/sluzby/legalizacia-ciernych-stavieb",
+  },
 };
 
 export default function LegalizaciaPage() {

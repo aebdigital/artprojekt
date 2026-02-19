@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Stavebný a autorský dozor - ART PROJEKT s.r.o.",
-  description: "Profesionálny stavebný a autorský dozor. Kontrola kvality prác, dodržanie projektovej dokumentácie a stavebných noriem.",
-  keywords: "stavebný dozor, autorský dozor, kontrola kvality, projektová dokumentácia",
+  title: "Stavebný a autorský dozor",
+  description: "Stavebný a autorský dozor – kontrola kvality stavebných prác, dodržanie projektovej dokumentácie a stavebných noriem. ART PROJEKT s.r.o., Dolné Dubové, okres Trnava.",
+  keywords: ["stavebný dozor", "autorský dozor", "kontrola kvality stavby", "dozor stavby", "stavebný dozor Trnava", "SKSI"],
+  alternates: { canonical: "https://artprojekt.sk/sluzby/stavebny-autorsky-dozor" },
+  openGraph: {
+    title: "Stavebný a autorský dozor | ART PROJEKT s.r.o.",
+    description: "Odborný stavebný a autorský dozor – ochrana investícií investora počas realizácie stavby.",
+    url: "https://artprojekt.sk/sluzby/stavebny-autorsky-dozor",
+  },
 };
 
 export default function StavebnyDozorPage() {

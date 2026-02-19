@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import ServicePageLayout from "@/components/ServicePageLayout";
 
 export const metadata: Metadata = {
-  title: "Architektonické a projekčné práce - ART PROJEKT s.r.o.",
-  description: "Profesionálne architektonické a projekčné práce. Urbanistické štúdie, architektonické štúdie a projektová dokumentácia.",
-  keywords: "architektonické práce, projekčné práce, urbanistické štúdie, projektová dokumentácia",
+  title: "Architektonické a projekčné práce",
+  description: "Profesionálne architektonické a projekčné práce – urbanistické štúdie, architektonické štúdie, projektová dokumentácia a 3D vizualizácie. ART PROJEKT s.r.o., Dolné Dubové, okres Trnava.",
+  keywords: ["architektonické práce", "projekčné práce", "urbanistická štúdia", "architektonická štúdia", "projektová dokumentácia", "architekt Trnava", "projektant Dolné Dubové"],
+  alternates: { canonical: "https://artprojekt.sk/sluzby/architektonicke-projekcne-prace" },
+  openGraph: {
+    title: "Architektonické a projekčné práce | ART PROJEKT s.r.o.",
+    description: "Urbanistické štúdie, architektonické štúdie a projektová dokumentácia. Komplexné architektonické riešenia od návrhu po realizáciu.",
+    url: "https://artprojekt.sk/sluzby/architektonicke-projekcne-prace",
+  },
 };
 
 export default function ArchitektonickeProjektePage() {

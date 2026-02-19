@@ -2,9 +2,15 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Referencie - ART PROJEKT s.r.o.",
-  description: "Naše realizované projekty - rodinné domy, občianske stavby, rekonštrukcie. Viac ako 500 dokončených projektov.",
-  keywords: "referencie, projekty, rodinné domy, architektonické práce, ART PROJEKT",
+  title: "Referencie",
+  description: "Realizované projekty ART PROJEKT s.r.o. – rodinné domy, občianske stavby, rekonštrukcie. Viac ako 500 dokončených projektov v Trnavskom kraji a okolí.",
+  keywords: ["referencie", "realizované projekty", "rodinné domy", "občianske stavby", "rekonštrukcie", "ART PROJEKT projekty", "architektúra Trnava"],
+  alternates: { canonical: "https://artprojekt.sk/referencie" },
+  openGraph: {
+    title: "Referencie | ART PROJEKT s.r.o.",
+    description: "Viac ako 500 dokončených projektov – rodinné domy, občianske stavby, rekonštrukcie.",
+    url: "https://artprojekt.sk/referencie",
+  },
 };
 
 export default function ReferenciePage() {

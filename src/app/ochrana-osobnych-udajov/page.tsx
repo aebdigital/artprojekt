@@ -2,8 +2,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Ochrana osobných údajov - ART PROJEKT s.r.o.",
-  description: "Informácie o ochrane osobných údajov spoločnosti ART PROJEKT s.r.o.",
+  title: "Ochrana osobných údajov",
+  description: "Zásady ochrany osobných údajov spoločnosti ART PROJEKT s.r.o. podľa GDPR. Informácie o spracúvaní osobných údajov.",
+  alternates: { canonical: "https://artprojekt.sk/ochrana-osobnych-udajov" },
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPolicyPage() {
